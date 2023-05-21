@@ -1,0 +1,157 @@
+:root{
+    --personal: var(--primary);
+    --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+    --shadow:  1px 4px rgba(0, 0, 0, 0.1);
+    --dark: #313154;
+}
+*{
+    font-family: 'montserrat', sans-serif;
+    background-color: rgb(198, 198, 198);
+}
+body{
+    border: solid 2px rgb(212, 127, 141);
+}
+.icon{
+    position: absolute;
+    left:48%;
+    top: 0;
+    width: 90px; 
+}
+#title{
+    position: relative;
+    left:35%;
+    display: inline-block;
+    text-align: center;
+	text-shadow: var(--shadow);
+    font-size: 64px;
+    animation: sway 5s linear 2 ;
+    background-color: rgb(212, 127, 141);
+    border-radius: 5rem;
+    border: 1px solid rgb(212, 127, 141);
+    padding: 1.5%;
+    line-height: 1;
+}
+.container{
+    position: relative;
+    left:33%;
+    top: 10%;
+    width: 60%;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: var(--dark);
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1.5rem;
+    text-align: center;
+}
+#text1,#text2,#text3,#text4{
+    position: relative;
+    left:35%;
+    top: 10%;
+    background-color: rgb(212, 127, 141);
+    width: 60%;
+    font-size: 100%;
+    border:1px rgb(212, 127, 141) solid;
+	cursor: pointer;
+    padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+}
+#text1:hover {
+	opacity: 0.75;
+}
+#text2:hover {
+	opacity: 0.75;
+}
+#text3:hover {
+	opacity: 0.75;
+}
+#text4:hover {
+	opacity: 0.75;
+}
+#change{
+    border:3px solid rgb(212, 127, 141) ;
+    border-radius:50%;
+    background-color: var(--personal);
+	box-shadow: var(--personal-glow);
+    background-color: #FFF;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+    width: 70px;
+	height: 70px;
+	opacity: 0.75;
+    font-size: 100%;
+    position: relative;
+    left:63%;
+}
+#change:hover{
+	opacity: 0.5;
+}.response{
+    text-align: center;
+    background-color: rgb(212, 127, 141);
+    color:#FFF;
+    font-size: 450%;
+}
+#aboutext{
+    position: absolute;
+    left:3%;
+    bottom:40%;
+    text-align: center;
+    color: #FFF;
+    border: solid 2px rgb(212, 127, 141);
+    text-shadow: var(--shadow);
+    background-color: rgb(212, 127, 141);
+}
+#aboutitle{
+    position: absolute;
+    bottom: 65%;
+    left:5%;
+    color:rgb(212, 127, 141);
+	text-shadow: var(--shadow);
+    background-color: #FFF;
+}
+#aboutitle:hover{
+    transform: rotate(-180deg);
+}
+#aboutext:hover {
+	opacity: 0.75;
+}
+@keyframes sway {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: ease-in-out;
+    }
+    10% {
+        transform: rotate(-12deg);
+        animation-timing-function: ease-in-out;
+    }
+    30% {
+        transform: rotate(8deg);
+        animation-timing-function: ease-in-out;
+    }
+    45% {
+        transform: rotate(-4deg);
+        animation-timing-function: ease-in-out;
+    }
+    60% {
+        transform: rotate(2deg);
+        animation-timing-function: ease-in-out;
+    }
+    70% {
+        transform: rotate(-.1deg);
+        animation-timing-function: ease-in-out;
+    }
+    75% {
+        transform: rotate(.05deg);
+        animation-timing-function: ease-in-out;
+    }
+    80% {
+        transform: rotate(0);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}
